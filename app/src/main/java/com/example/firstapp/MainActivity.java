@@ -8,9 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button mButtonSubmit;
-    private TextView mTextResult;
-    private EditText mTextInput;
+    // TODO 2.0: add your appropriate variables here
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,19 +19,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void addAction() {
-        mButtonSubmit.setOnClickListener(this);
+        //TODO 2.2: add OnClickListenter for your button here
     }
 
     private void initView() {
-        mButtonSubmit = findViewById(R.id.button_submit);
-        mTextInput = findViewById(R.id.edit_input);
-        mTextResult = findViewById(R.id.text_result);
+        //TODO 2.1: map the view with appropriate variable
     }
 
     @Override
     public void onClick(View v) {
-        String input = mTextInput.getText().toString();
-        mTextResult.setText(getResources().getString(R.string.message) +
-                ' ' + input + '!' + getResources().getString(R.string.nice_day_msg));
+        // TODO 2.3: add your handle when you enter your name and hit submit button
     }
 }
